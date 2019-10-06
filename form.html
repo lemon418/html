@@ -7,7 +7,7 @@
 <body>
 
 
-	<form>
+	<form method="post">
 		
 			
 		<fieldset>
@@ -16,7 +16,7 @@
 			<fieldset>
 				<legend>Укажите имя и фамилию</legend>
 			<label for="name">Имя</label>
-			<input id="name" type="text">
+			<input required id="name" type="text">
 
 			<br>
 
@@ -40,7 +40,7 @@
 			<br>
 			<fieldset>	
 			<legend>Укажите email</legend>
-			<input type="email">
+			<input required type="email">
 			</fieldset>
 			
 			<br>
@@ -58,13 +58,28 @@
 			<fieldset>
 			<legend>Оцените наш сайт по шкале от 1 до 5</legend>	
 			<select name="" id="">
-				<option value="1" name="range">1</option>
-				<option value="2" name="range">2</option>
-				<option value="3" name="range">3</option>
-				<option value="4" name="range">4</option>
-				<option value="5" name="range">5</option>
+				<optgroup label="Ваша оценка">			
+					<option value="1" name="range">1</option>
+					<option value="2" name="range">2</option>
+					<option value="3" name="range">3</option>
+					<option value="4" name="range">4</option>
+					<option value="5" name="range">5</option>
+				</optgroup>	
 			</select>
 			</fieldset>
+
+			<br>	
+			<fieldset>	
+				<legend>Загрузка файлов для конкурса</legend>
+				<label>Выберете файл<input required type="file" multiple></label>
+			</fieldset>
+
+			<br>	
+			<fieldset>	
+				<legend>Введите Ваш пароль (не менее 8 знаков)</legend>
+				<label for="psw">пароль</label>
+				<input required id="psw" type="password" minlength="8">
+			</fieldset>		
 
 			<br>	
 			<button type="submit"><img src="img/submit.jpg" alt="отправка данных"></button>	
