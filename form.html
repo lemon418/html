@@ -7,33 +7,41 @@
 <body>
 
 
-	<form action="">
+	<form>
 		
 			
 		<fieldset>
 			<legend>Заполните поля</legend>
+			
+			<fieldset>
+				<legend>Укажите имя и фамилию</legend>
 			<label for="name">Имя</label>
 			<input id="name" type="text">
 
 			<br>
+
 			<label for="surname">Фамилия</label>
 			<input id="surname" type="text">
+			</fieldset>
 
-			<br>	
+			<br>
+			<fieldset>	
 			<legend>Укажите Ваш пол</legend>
-			<label>М<input type="radio"></label>
-			<label>Ж<input type="radio"></label>
+			<label>М<input type="radio" name="gender"></label>
+			<label>Ж<input type="radio" name="gender"></label>
+			</fieldset>
 
 			<br>
-			<label for="surname">Ваш возраст</label>
-			<input id="surname" type="text">
-
-			<br>	
-			<input type="date" value="Ваш возраст">
+			<fieldset>
+			<legend>Ваш возраст</legend>	
+			<input type="date">
+			</fieldset>
 
 			<br>
-			<label for="email">Укажите email</label>
-			<input id="email" type="email">
+			<fieldset>	
+			<legend>Укажите email</legend>
+			<input type="email">
+			</fieldset>
 			
 			<br>
 			<label for="checkbox">Хотели бы Вы получать уведомления</label>
@@ -43,15 +51,28 @@
 			<br>
 		<fieldset>			
 			<legend>Ваш коментарий для Нас</legend>
-			<textarea placeholder="оставте Ваш комментарий о работе нашего сайта, в каких конкурсах Вы хотели бы принять участие и т. д."></textarea>
+			<textarea placeholder="оставте Ваш комментарий о работе нашего сайта, в каких конкурсах Вы хотели бы принять участие и т. д." cols="30" rows="15"></textarea>
 		</fieldset>	
 
-			<br>	
-			<input type="submit" value="отправить">	
+			<br>
+			<fieldset>
+			<legend>Оцените наш сайт по шкале от 1 до 5</legend>	
+			<select name="" id="">
+				<option value="1" name="range">1</option>
+				<option value="2" name="range">2</option>
+				<option value="3" name="range">3</option>
+				<option value="4" name="range">4</option>
+				<option value="5" name="range">5</option>
+			</select>
+			</fieldset>
 
-	
-		
-	</form>
+			<br>	
+			<button type="submit"><img src="img/submit.jpg" alt="отправка данных"></button>	
+
+
+		</form>
+
+
 	
 
 </body>
