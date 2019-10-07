@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<style>
+
+		legend { color: #990000; font-size: 20px;		
+
+	</style>
 	<meta charset="UTF-8">
 	<title>forms</title>
 </head>
-<body>
+<body bgcolor="#ffffb3">
 
 
 	<form method="post">
 		
 			
 		<fieldset>
-			<legend>Заполните поля</legend>
-			
+			<legend align="center">Заполните поля формы</legend>
+		
+
+
+
 			<fieldset>
 				<legend>Укажите имя и фамилию</legend>
-			<label for="name">Имя</label>
-			<input required id="name" type="text">
-
-			<br>
-
-			<label for="surname">Фамилия</label>
-			<input id="surname" type="text">
+					<table>
+						<tr>
+							<td>
+						<label for="name">Имя</label>
+							</td>
+							<td>
+						<input required id="name" type="text">
+							</td>
+						</tr>
+			
+						<tr>
+							<td>
+						<label for="surname">Фамилия</label>
+							</td>
+							<td>
+						<input id="surname" type="text">
+							</td>
+						</tr>
+					</table>
 			</fieldset>
+
+
+
 
 			<br>
 			<fieldset>	
@@ -44,6 +68,7 @@
 			</fieldset>
 			
 			<br>
+		<fieldset>	
 			<label for="checkbox">Хотели бы Вы получать уведомления</label>
 			<input type="checkbox">	
 		</fieldset>	
@@ -83,6 +108,8 @@
 
 			<br>	
 			<button type="submit"><img src="img/submit.jpg" alt="отправка данных"></button>	
+
+		</fieldset>
 
 
 		</form>
