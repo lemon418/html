@@ -6,15 +6,18 @@
 
 		legend { color: #990000; font-size: 20px;
 		}
+
+		.name {
+			width: 215px;
+			text-align: right;
+		}
+
 		.button {
-			display: inline-block;
 			width: 220px;
 			height: 50px;
 		}
 
-		.name {
-			width: 215px;
-		}
+
 
 
 	</style>
@@ -24,10 +27,10 @@
 <body bgcolor="#ffffb3">
 
 	
-	<form  action="#" method="post">
+<form  action="#" method="post">
 		
 			
-		<fieldset>
+	<fieldset>
 			<legend align="center">Заполните поля формы</legend>
 		
 
@@ -35,62 +38,62 @@
 
 			<fieldset>
 				<legend>Укажите имя и фамилию</legend>
-					<div class="name" align="right">
-						<label for="name">Имя</label>
-							
-						<input required id="name" type="text">
+				
+					<div class="name">
+						<div>
+							<label for="name">Имя</label>
+							<input required id="name" type="text">
+
+						</div>
 						
-						<br>
 						
-						<label for="surname">Фамилия</label>
-							
-						<input id="surname" type="text">
+						<div>
+							<label for="surname">Фамилия</label>							
+							<input id="surname" type="text">
+						</div>
 					</div>	
 					
 			</fieldset>
 
-
-
-
-			<br>
+			
 			<fieldset>	
 			<legend>Укажите Ваш пол</legend>
 			<label>М<input type="radio" name="gender"></label>
 			<label>Ж<input type="radio" name="gender"></label>
 			</fieldset>
 
-			<br>
+			
 			<fieldset>
 			<legend>Ваш возраст</legend>	
 			<input type="date">
 			</fieldset>
 
-			<br>
+			
 			<fieldset>
 				<legend>сколько примерно вы пишите музыку?</legend>
 				<label>от 0 до 100<input type="range" min="0" max="100" step="1" value="50"></label>
 			</fieldset>
 
-			<br>
+			
 			<fieldset>	
 			<legend>Укажите email</legend>
 			<input required type="email">
 			</fieldset>
 			
-			<br>
+		<br>	
 		<fieldset>	
 			<label for="checkbox">Хотели бы Вы получать уведомления</label>
 			<input id="checkbox" type="checkbox">	
 		</fieldset>	
 
-			<br>
+			
 		<fieldset>			
 			<legend>Ваш коментарий для Нас</legend>
 			<textarea placeholder="оставте Ваш комментарий о работе нашего сайта, в каких конкурсах Вы хотели бы принять участие и т. д." cols="30" rows="15"></textarea>
 		</fieldset>	
 
-			<br>
-			<fieldset>
+			
+		<fieldset>
 			<legend>Оцените наш сайт по шкале от 1 до 5</legend>	
 			<select name="select">
 				<optgroup label="Ваша оценка">			
@@ -101,30 +104,30 @@
 					<option value="5">5</option>
 				</optgroup>	
 			</select>
-			</fieldset>
+		</fieldset>
 
-			<br>	
-			<fieldset>	
+				
+		<fieldset>	
 				<legend>Загрузка файлов для конкурса</legend>
 				<label>Выберете аудио файл<input required type="file" accept="audio/*" multiple></label>
 			</fieldset>
 
-			<br>	
-			<fieldset>	
+				
+		<fieldset>	
 				<legend>Введите Ваш пароль (не менее 8 знаков)</legend>
 				<label for="psw">пароль</label>
 				<input required id="psw" type="password" minlength="8">
-			</fieldset>		
+		</fieldset>		
 
 			<br>	
 			<button type="submit"><img src="img/submit.jpg" alt="отправка данных"></button>
 
 			<br>
 			<button type="reset" class="button">очистить форму</button>
-		</fieldset>
+	</fieldset>
 
 
-		</form>
+</form>
 
 
 	
