@@ -12,6 +12,10 @@
 			height: 50px;
 		}
 
+		.name {
+			width: 215px;
+		}
+
 
 	</style>
 	<meta charset="UTF-8">
@@ -19,8 +23,8 @@
 </head>
 <body bgcolor="#ffffb3">
 
-
-	<form method="post">
+	
+	<form  action="#" method="post">
 		
 			
 		<fieldset>
@@ -31,25 +35,18 @@
 
 			<fieldset>
 				<legend>Укажите имя и фамилию</legend>
-					<table>
-						<tr>
-							<td>
+					<div class="name" align="right">
 						<label for="name">Имя</label>
-							</td>
-							<td>
+							
 						<input required id="name" type="text">
-							</td>
-						</tr>
-			
-						<tr>
-							<td>
+						
+						<br>
+						
 						<label for="surname">Фамилия</label>
-							</td>
-							<td>
+							
 						<input id="surname" type="text">
-							</td>
-						</tr>
-					</table>
+					</div>	
+					
 			</fieldset>
 
 
@@ -83,7 +80,7 @@
 			<br>
 		<fieldset>	
 			<label for="checkbox">Хотели бы Вы получать уведомления</label>
-			<input type="checkbox">	
+			<input id="checkbox" type="checkbox">	
 		</fieldset>	
 
 			<br>
@@ -95,13 +92,13 @@
 			<br>
 			<fieldset>
 			<legend>Оцените наш сайт по шкале от 1 до 5</legend>	
-			<select>
+			<select name="select">
 				<optgroup label="Ваша оценка">			
-					<option value="1" name="range">1</option>
-					<option value="2" name="range">2</option>
-					<option value="3" name="range">3</option>
-					<option value="4" name="range">4</option>
-					<option value="5" name="range">5</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
 				</optgroup>	
 			</select>
 			</fieldset>
