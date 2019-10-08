@@ -4,7 +4,14 @@
 
 	<style>
 
-		legend { color: #990000; font-size: 20px;		
+		legend { color: #990000; font-size: 20px;
+		}
+		.button {
+			display: inline-block;
+			width: 220px;
+			height: 50px;
+		}
+
 
 	</style>
 	<meta charset="UTF-8">
@@ -62,6 +69,12 @@
 			</fieldset>
 
 			<br>
+			<fieldset>
+				<legend>сколько примерно вы пишите музыку?</legend>
+				<label>от 0 до 100<input type="range" min="0" max="100" step="1" value="50"></label>
+			</fieldset>
+
+			<br>
 			<fieldset>	
 			<legend>Укажите email</legend>
 			<input required type="email">
@@ -82,7 +95,7 @@
 			<br>
 			<fieldset>
 			<legend>Оцените наш сайт по шкале от 1 до 5</legend>	
-			<select name="" id="">
+			<select>
 				<optgroup label="Ваша оценка">			
 					<option value="1" name="range">1</option>
 					<option value="2" name="range">2</option>
@@ -96,7 +109,7 @@
 			<br>	
 			<fieldset>	
 				<legend>Загрузка файлов для конкурса</legend>
-				<label>Выберете файл<input required type="file" multiple></label>
+				<label>Выберете аудио файл<input required type="file" accept="audio/*" multiple></label>
 			</fieldset>
 
 			<br>	
@@ -107,8 +120,10 @@
 			</fieldset>		
 
 			<br>	
-			<button type="submit"><img src="img/submit.jpg" alt="отправка данных"></button>	
+			<button type="submit"><img src="img/submit.jpg" alt="отправка данных"></button>
 
+			<br>
+			<button type="reset" class="button">очистить форму</button>
 		</fieldset>
 
 
