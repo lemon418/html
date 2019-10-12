@@ -1,0 +1,32 @@
+body {
+/*	background-color: #668cff;
+	background-image: url("../img/creative_coding.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 70%;*/
+
+	background:  fixed #668cff url("../img/creative_coding.jpg") center no-repeat;
+	background-size: 80%; /*В к сокращенной записи не нашел как применить*/
+
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin: /*отступ по оси "y"(первое) для маленьких экранов*/ 12px 10px; 
+
+}
+
+nav a {
+	border: 3px solid #004d00;
+	padding: 10px;
+	background: #ccc;
+	text-decoration: none;	
+}
+
+
+ul {
+	text-align: center;
+}
+
