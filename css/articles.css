@@ -1,0 +1,50 @@
+body {
+	background: #e6fff2;
+	font: 18px bold arial;	
+}
+
+a {
+	text-decoration: none;
+	/*background: #00cccc;*/
+	font: 24px bold arial;
+}
+
+span {
+	font-weight: bold;
+}
+
+.italic {
+	font: italic;
+}
+
+img {
+	display: block;
+	width: 800px;
+	margin: 10px auto;
+	border-radius: 20px;
+	box-shadow: -5px 5px 20px #008080;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 0;
+	width: 600px;
+	margin: 50px auto 0
+
+}
+
+.autor {
+	margin: auto;
+	text-align: center;
+}
+
+.container {
+	width: 70%;
+	border: 1px solid green;
+	margin: 0 auto;
+	padding: 15px;
+	border-radius: 20px;
+	box-shadow: -5px 5px 20px #004080;
+
+}
