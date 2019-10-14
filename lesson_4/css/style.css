@@ -25,11 +25,17 @@ body {
 }
 
 .flex-1 {
-	flex: 2;
+	flex: 1;
 }
 
 .background {
 	background: #b3f0ff;
-	height: 100px;
 }	
 
+.size {
+	height: 300px;
+}
+
+.size-2 {
+	height: 150px;
+}
