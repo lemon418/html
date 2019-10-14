@@ -39,3 +39,14 @@ body {
 .size-2 {
 	height: 150px;
 }
+
+aside {
+	background: #ffff66;
+	justify-content: space-between;
+}
+
+aside div {
+	margin: 5px;
+	background: #b3ffe0;
+	padding: 10px;
+}
